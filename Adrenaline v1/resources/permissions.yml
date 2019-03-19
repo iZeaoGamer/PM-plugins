@@ -1,0 +1,4 @@
+Groups:
+   default:
+      permission:
+        - "pocketmine.command.gamemode"

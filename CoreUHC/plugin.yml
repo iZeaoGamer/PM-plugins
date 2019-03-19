@@ -1,0 +1,23 @@
+name: Core
+main: Core\Loader
+author: AppleDevelops
+api: [2.0.0, 3.0.0, 3.0.0-ALPHA1]
+version: 1.0
+
+commands:
+    uhc:
+        description: "Start the UHC!"
+        permission: start.uhc
+        
+    scenario:
+        description: "Add a scenario!"
+        permission: scenario.uhc
+        aliases: [s, sc]
+        
+permission:
+    start.uhc:
+        description: "Permission to start the UHC!"
+        default: op
+    scenario.uhc:
+        description: "Permission to add a scenario"
+        default: op

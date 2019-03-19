@@ -1,0 +1,8 @@
+name: AdrenalineUHC
+author: AppleDevelops
+api: [2.1.0, 3.0.0-ALPHA5, 3.0.0-ALPHA6]
+main: Adrenaline\Loader
+version: 1.0.0b3
+load: STARTUP
+
+

@@ -1,0 +1,13 @@
+name: Tweeter
+author: AppleDevelops
+version: 1.0.0 beta 1
+main: Tweeter\Loader
+api: [3.0.0-ALPHA6]
+commands:
+  tweeter:
+    description: "Tweet via plugin"
+    permission: "tweeter.tweet"
+permission:
+  tweeter.tweet:
+    description: "Tweet via plugin"
+    default: op

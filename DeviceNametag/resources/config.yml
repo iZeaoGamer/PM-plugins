@@ -1,0 +1,9 @@
+#This is used for the device name:
+devices:
+  Android: "ANDROID"
+  iOS: "iOS"
+  OSX: "OS X"
+  FireOS: "FIRE OS"
+  GearVR: "GEAR VR"
+  Hololens: "HOLOLENS"
+  Windows10: "WINDOWS 10"

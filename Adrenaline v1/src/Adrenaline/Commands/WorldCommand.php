@@ -1,0 +1,47 @@
+<?php
+declare(strict_types=1);
+
+namespace Adrenaline\Commands;
+
+use Adrenaline\BaseFiles\BaseCommand;
+use Adrenaline\Loader;
+use pocketmine\command\CommandSender;
+use pocketmine\Player;
+
+/**
+ * Class WorldCommand
+ *
+ * @package Adrenaline\Commands
+ */
+class WorldCommand extends BaseCommand {
+	/**
+	 * WorldCommand constructor.
+	 *
+	 * @param Loader $plugin
+	 */
+	public function __construct(Loader $plugin){
+		parent::__construct($plugin, "world", "Teleport to a world", "/world [worldname]", []);
+	}
+
+	/**
+	 * @param CommandSender $sender
+	 * @param string        $commandLabel
+	 * @param array         $args
+	 *
+	 * @return bool|void
+	 */
+	public function execute(CommandSender $sender, $commandLabel, array $args){
+		if($sender instanceof Player){
+			$world = $sender->getServer()->getLevelByName($args[0]);
+			if(!$sender->getServer()->isLevelLoaded((string) $world)){
+				$sender->getServer()->loadLevel((string) $world);
+				$sender->sendMessage("Loading!");
+				$sender->teleport($world->getSafeSpawn());
+				$sender->sendMessage("Teleported!");
+			}else{
+				$sender->teleport($world->getSafeSpawn());
+				$sender->sendMessage("Teleported!");
+			}
+		}
+	}
+}

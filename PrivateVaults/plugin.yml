@@ -1,0 +1,10 @@
+name: PrivateVault
+main: PrivateVault\Main
+version: 1.1.0
+api: [3.0.0, 3.0.0-ALPHA5]
+author: Bulk & AppleDevelops
+commands:
+  pv:
+    description: "Command for PrivateVaults"
+    usage: /pv
+    permission: privatevaults.permission
