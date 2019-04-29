@@ -1,4 +1,4 @@
-### Plugin List
+## Plugin List
 
 ### These plugins are on API 3.0.0
 - ShockHub
