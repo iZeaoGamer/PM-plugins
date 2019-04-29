@@ -1,6 +1,12 @@
 ### Plugin List
-*These plugins haven't been updated for a long time. Chances are they won't work anymore.*
 
+### These plugins are on API 3.0.0
+- ShockHub
+- ShockNetwork
+- ShockPractice
+- ShockUHC
+
+### Plugins on API from spoons or alpha APIs.
 - Adrenaline v1
 - Adrenaline v2
 - Avoltex v1
